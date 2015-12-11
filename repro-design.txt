@@ -7,4 +7,9 @@
 	-CPU arch parser 
 -Executable format API
 	-Support: flat binary, ELF, PE, Mach-O, Python, Java
-	-def cpu_arch_id(
+	-Class name: ExecutableFormat
+		-def parse(f: file) -> Executable
+		 Parse the executable and return it as an object
+	-Class name: Executable
+		-def get_cpu_arch() -> int
+		-def get_sections() -> list
