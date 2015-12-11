@@ -1,0 +1,10 @@
+-An executable file for a specific CPU arch is disassembled
+-Disassembly process
+	-Backend feeds executable file to execfmt parser
+	-Execfmt parser generates the code and data sections for the program
+	-Code and data sections are passed to the backend, along with CPU arch
+	-Backend feeds code and data sections to the CPU arch parser
+	-CPU arch parser 
+-Executable format API
+	-Support: flat binary, ELF, PE, Mach-O, Python, Java
+	-def cpu_arch_id(
